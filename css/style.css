@@ -1,0 +1,257 @@
+/* Fonttien tuonti */
+@import url('https://fonts.googleapis.com/css2?family=Bangers&family=Press+Start+2P&family=Titillium+Web&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+/* Layout */
+
+html, body
+{
+	height: 99%; /* Jos korkeus on 100%, ikkuna venyy */
+    background-color: #B23A48;
+    color: #461220;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.main
+{
+    height: 100%;
+	width: 80vw;
+	background-color: #FCB9B2;
+    margin: auto; /* Main div keskittyy tämän avulla */
+    padding: 5px; /* Sisältö di vien ympärille jää tilaa */
+    overflow: auto; /* Pystyy scrollaamaan joka suuntaan kun pienentää ruutua */
+}
+
+.header
+{
+    width: 100%;
+    text-align: center;
+	background-color: #8C2F39;
+    padding: 5px; /* Otsikkotekstin ympärille tulee tilaa */
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+}
+
+.nav
+{
+    width: 100%;
+    text-align: center;
+	background-color: #B23A48;
+    padding-top: 1px; /* Jos ei ole, otsikon ympärille ei jää tilaa */
+    padding-bottom: 10px; /* Divin alareunaan jää vähän tilaa */
+    font-family: 'Press Start 2P', cursive;
+}
+
+.section
+{
+    text-align: center;
+    background-color: #FCB9B2;
+    padding-right: 30px; /* Divin sisäreunoille jää vähän tilaa */
+    padding-bottom: 10px;
+    padding-left: 30px;
+}
+
+/* Muut muotoilut */
+
+
+/* Pääasettelut */
+h1
+{
+    text-shadow: 0 0 10px #FED0BB;
+}
+
+h2
+{
+    font-family: 'Bangers', cursive;
+    font-size: 30px;
+}
+
+h3
+{
+    font-size: 16px;
+}
+
+table
+{
+    text-align: left;
+    margin: auto; /* Keskittää taulukon sivuston keskelle */
+    border-collapse: collapse; 
+}
+
+td
+{
+    font-family: 'Press Start 2P', cursive;
+    font-size: 11px;
+}
+
+a
+{
+    color: #461220;
+	text-decoration: none;
+}
+
+a:hover
+{
+    color: #8C2F39;
+}
+
+td
+{
+    padding-bottom: 5px;
+}
+
+.profilepicture
+{
+    max-width: 15vw;
+}
+
+/* Menupalkin linkit */
+.nav a 
+{
+    border-radius: 5px; /* Pyöristää kulmat */
+	text-align: center;
+	background-color: #FED0BB;
+	padding: 10px;
+	display: inline-block;
+    width: 25%; /* Linkkiboksit saman kokoiset */
+    font-size: 1vw; /* Teksti skaalautuu */
+    
+}
+
+.nav a:hover
+{
+    color: #FCB9B2;
+    background-color: #461220;
+}
+
+.nav h3
+{
+    font-family: 'Bangers', cursive;
+    font-size: 25px;
+}
+
+/* Cv sivun asettelut */
+.article
+{
+    display: flex; /* Sisältö divit yhtä korkeat */
+    margin: auto; /* Main div keskittyy tämän avulla */
+    overflow: auto; /* Pystyy scrollaamaan joka suuntaan kun pienentää ruutua */
+    padding-right: 30px; /* Divin sisäreunoille jää vähän tilaa */
+    padding-left: 30px;
+}
+
+.left
+{
+    float: left;
+    width: 50%;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+	background-color: #FED0BB;
+}
+
+.right
+{
+    float: right;
+    width: 50%;
+    padding-top: 5px;
+    padding-right: 20px;
+    padding-bottom: 5px;
+    padding-left: 20px;
+    background-color: #B23A48;
+}
+
+.bottombordersmall
+{
+    border-bottom: 1px solid #461220;
+    width: 20%;
+}
+
+.bottomborderbig
+{
+    border-bottom: 1px solid #461220;
+    width: 80%;
+}
+
+.portfolio
+{
+	padding-top: 1px; /* Jos ei ole, otsikon ympärille ei jää tilaa */
+    padding-bottom: 5px;
+}
+
+.info
+{
+    width: 25%; /* Cv:ssä taulukon sarakkeet samanlevyiset */
+    text-align: center;
+}
+
+.thumb
+{
+  border: 1px solid #FED0BB;
+  border-radius: 5px;  /* Pyöristää reunan kulmat */
+  /* padding: 5px;  Some padding */
+  height: 100px;
+}
+
+.thumb:hover
+{
+    box-shadow: 0 0 2px 1px #461220;
+}
+
+.portfoliopicture
+{
+  max-width: 30vw;
+}
+
+.portfoliobigpicture
+{
+    max-width: 50vw;
+}
+
+/* Yhteystietosivun asetteluja */
+
+.logo
+{
+    text-align: center;
+}
+
+.fa-linkedin
+{
+    padding: 10px;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    background: #007bb5;
+    color: white;
+}
+
+.fa-linkedin:hover
+{
+    color: white;
+}
+
+.material-icons
+{
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+}
+
+.footer /* Copyt yms. teksti alareunaan */
+{
+	bottom: 10px;
+    text-align: left;
+    font-size: 13px;
+}
