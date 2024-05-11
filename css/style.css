@@ -40,7 +40,7 @@ html, body
     width: 100%;
     text-align: center;
 	background-color: #B23A48;
-    padding-top: 1px; /* Jos ei ole, otsikon ympärille ei jää tilaa */
+    padding-top: 10px; /* Jos ei ole, otsikon ympärille ei jää tilaa */
     padding-bottom: 10px; /* Divin alareunaan jää vähän tilaa */
     font-family: 'Press Start 2P', cursive;
 }
